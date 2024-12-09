@@ -8,13 +8,12 @@ let votos = {};
 let inactividadTimer;
 let coloresPorFila = 4;
 
-const listaColores = ['red', 'blue', 'yellow', 'green', 'orange', 'purple', 'pink', 'brown', 'teal', 'lime'];
+const listaColores = ['red', 'blue', 'yellow', 'green', 'orange', 'purple', 'pink', 'brown', 'teal', 'lime', 'cyan', 'magenta', 'indigo', 'violet', 'gold', 'silver', 'gray', 'black'];	
 
 
 const sonidos = [
-  './sonidos/aplauso.mp3',
-  './sonidos/campana.mp3',
-  './sonidos/pop.mp3'
+  './assets/sounds/applause.mp3',
+  './assets/sounds/campana.mp3',
 ];
 
 
@@ -88,6 +87,7 @@ function actualizarVotos() {
   votosDiv.innerHTML = colorMasPopular
     ? `Color más popular: <span style="color:${colorMasPopular}">${colorMasPopular}</span> con ${votos[colorMasPopular]} votos.`
     : 'Aún no hay votos.';
+
 }
 
 function reiniciarInactividad() {

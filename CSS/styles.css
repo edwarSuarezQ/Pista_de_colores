@@ -69,7 +69,9 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin: 20px 0;
+  margin: 20px;
+  border: 2px dashed #ccc;
+  padding: 10px;
 }
 
 .fila {
@@ -98,7 +100,7 @@ h1 {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #047cfd;
   color: white;
   transition: background-color 0.3s;
 }
@@ -118,4 +120,12 @@ h1 {
 .votos {
   margin-top: 20px;
   font-size: 1.2rem;
+}
+
+.video {
+  background-color: #0cfd04;
+}
+
+.video:hover{
+  background-color:  #09a304;
 }
